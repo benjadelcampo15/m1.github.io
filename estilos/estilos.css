@@ -1,0 +1,227 @@
+body{
+    background-color: rgb(15 23 42);
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+      
+    img{
+        width:3em;
+        margin-top: 0.4em;
+        margin-left: 2em;
+    }
+}
+.lista  {
+    
+    display: flex;
+    color: rgb(48, 205, 197);
+    
+    a{
+        text-decoration: none;
+        color: white;
+        margin-right: 3em;
+        
+    }
+}
+
+#about{
+    margin-top: 5%;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 18%;
+    color: white;
+
+    h2{
+        color: rgb(48, 205, 197);
+        margin-bottom: 1em;
+        font-size: 2em;
+    }
+    h1{
+
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+    p{
+        width: 38%;
+        color: rgb(156, 153, 153);
+        font-size: 1.2em;
+    }
+}   
+#skills{
+    display: flex;
+    flex-direction: row;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 18%;
+    margin-top: 3em;
+    color: white;
+   
+}
+.title-card{
+    h2{
+        color: rgb(48, 205, 197);
+        margin-bottom: 0.7em;
+        font-size: 1.5em;
+    }
+    h1{
+        font-size: 2em;
+    }
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+.second{
+    display: flex;
+    flex-direction: row;
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 6em;
+    height: 6em;
+    margin-left: 3em;
+    background-color: rgba(255, 255, 255, 0.666);
+    border-radius: 10px;
+     img {
+        width: 3em;
+    }
+    h2{
+        color: black;
+        margin-bottom: 0.7em;
+        margin-top: 0.3em;
+    }
+    
+}
+
+.tarjeta:hover{
+    background-color: white;
+    transition: 0.2s;
+}
+
+#activities{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 18%;
+    margin-top: 3em;
+    color: white;
+    span{
+        color: rgb(48, 205, 197);
+    }
+    h2{
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        font-size: 1.5em;
+    }
+    h1{
+        font-size: 2em;
+    }
+}
+
+
+/* prueba CHAT GPT */
+
+
+  
+ 
+  
+  .formulario {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0.5em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3em;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .etiqueta {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .campo-texto {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .boton-enviar {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .boton-enviar:hover {
+    background-color: #45a049;
+  }
+  
+
+  /*  Footer */
+
+  
+  footer{
+    
+    text-align: center;
+    img{
+        width: 1.5em;
+    }
+    
+    
+  }
+
+  @media screen and (max-width : 500px) {
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    #about{
+        p{
+            width: 100%;
+        }
+    }
+    #skills{
+        display: flex;
+        flex-direction: column;
+    }
+    .cards{
+        margin-left: 0;
+    }
+    .tarjeta{
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+  }
+ 
