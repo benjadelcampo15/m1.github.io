@@ -14,11 +14,6 @@ body{
     font-style: normal;
     font-size: 1.3em;
       
-    img{
-        width:3em;
-        margin-top: 0.4em;
-        margin-left: 2em;
-    }
 }
 .lista  {
     
@@ -206,8 +201,21 @@ body{
     body{
         display: flex;
         justify-content: center;
+        
+    }
+    .header{
+       display: flex;
+       justify-content: center;
+       a{
+        margin-right: 0;
+       }
+    }
+    .lista{
+        display: flex;
+        flex-direction: column;
     }
     #about{
+        margin-left: 5%;
         p{
             width: 100%;
         }
@@ -215,6 +223,7 @@ body{
     #skills{
         display: flex;
         flex-direction: column;
+        margin-left: 5%;
     }
     .cards{
         margin-left: 0;
@@ -223,5 +232,9 @@ body{
         margin-left: 1em;
         margin-top: 1em;
     }
+    #activities{
+        margin-left: 5%;
+    }
   }
+ 
  
