@@ -1,12 +1,10 @@
-html {
+tml {
     scroll-behavior: smooth;
 }
 body{
-    background-color: rgb(15 23 42);
+  background-color: rgb(15 23 42);
     display: flex;
     flex-direction: column;
-    scroll-behavior: smooth;
-    
 }
 .header{
     display: flex;
@@ -62,7 +60,7 @@ body{
     font-weight: 400;
     font-style: normal;
     margin-left: 18%;
-    margin-top: 3em;
+    margin-top: 8em;
     color: white;
    
 }
@@ -98,7 +96,7 @@ body{
     width: 6em;
     height: 6em;
     margin-left: 3em;
-    background-color: rgba(255, 255, 255, 0.666);
+    background-color: rgb(129, 149, 148);
     border-radius: 10px;
      img {
         width: 3em;
@@ -143,13 +141,12 @@ body{
   
  
   
-  .formulario {
+  #formulario {
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: normal;
     margin-top: 0.5em;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 3em;
   }
   
@@ -190,14 +187,160 @@ body{
   /*  Footer */
 
   
+
+
+
+
+  /* prueba pagina */
   footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .card {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(15 23 42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
     
-    text-align: center;
+    /* margin-left: 35%; */
+  }
+  
+  /* for all social containers*/
+
+
+  /* Add Activities */
+
+  #titulo{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 2em;
+    margin-left: 18%;
+  }
+  #contenedor{
+    display: flex;
+    margin-left: 18%;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .cardsActivities{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(129, 149, 148);
+    width: 15em;
+    height: 15em;
+    margin-right: 1em;
+    border-radius: 15px;
+    position: relative;
     img{
-        width: 1.5em;
+      border-radius: 20px;
     }
+    margin-bottom: 1em;
     
+  }
+  .cardTitle{
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .cardUrl{
     
+    width: 8em;
+    
+  }
+  .cardDescription{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 0.7em;
+  }
+
+  .cardEliminar{
+    width: 1.5em;
+    position: absolute;
+    bottom: 0.3em;
+  }
+
+  .cardEliminar:hover{
+    transition: 5ms;
+    transform: scale(1.1);
+  }
+
+  /* Add Activities */
+  
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: rgb(129, 149, 148);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+    align-content: center;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 
   @media screen and (max-width : 500px) {
@@ -238,6 +381,16 @@ body{
     #activities{
         margin-left: 5%;
     }
+    .card{
+        margin-left: 10%;
+    }
+    .contenedor{
+      display: flex;
+      flex-direction: column;
+      margin-left: 0%;
+    }
   }
  
+  
+  
  
