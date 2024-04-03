@@ -1,0 +1,395 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+  background-color: rgb(15 23 42);
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+      
+}
+.lista  {
+    
+    display: flex;
+    color: rgb(48, 205, 197);
+    
+    a{
+        text-decoration: none;
+        color: white;
+        margin-right: 3em;
+        
+    }
+}
+
+#about{
+    margin-top: 5%;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 18%;
+    color: white;
+
+    h2{
+        color: rgb(48, 205, 197);
+        margin-bottom: 1em;
+        font-size: 2em;
+    }
+    h1{
+
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+    p{
+        width: 38%;
+        color: rgb(156, 153, 153);
+        font-size: 1.2em;
+    }
+}   
+#skills{
+    display: flex;
+    flex-direction: row;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 18%;
+    margin-top: 8em;
+    color: white;
+   
+}
+.title-card{
+    h2{
+        color: rgb(48, 205, 197);
+        margin-bottom: 0.7em;
+        font-size: 1.5em;
+    }
+    h1{
+        font-size: 2em;
+    }
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+.second{
+    display: flex;
+    flex-direction: row;
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 6em;
+    height: 6em;
+    margin-left: 3em;
+    background-color: rgb(129, 149, 148);
+    border-radius: 10px;
+     img {
+        width: 3em;
+    }
+    h2{
+        color: black;
+        margin-bottom: 0.7em;
+        margin-top: 0.3em;
+    }
+    
+}
+
+.tarjeta:hover{
+    background-color: white;
+    transition: 0.2s;
+}
+
+#activities{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 18%;
+    margin-top: 3em;
+    color: white;
+    span{
+        color: rgb(48, 205, 197);
+    }
+    h2{
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        font-size: 1.5em;
+    }
+    h1{
+        font-size: 2em;
+    }
+}
+
+
+/* prueba CHAT GPT */
+
+
+  
+ 
+  
+  #formulario {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0.5em;
+    border-radius: 5px;
+    margin-bottom: 3em;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .etiqueta {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .campo-texto {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .boton-enviar {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .boton-enviar:hover {
+    background-color: #45a049;
+  }
+  
+
+  /*  Footer */
+
+  
+
+
+
+
+  /* prueba pagina */
+  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .card {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(15 23 42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    
+    /* margin-left: 35%; */
+  }
+  
+  /* for all social containers*/
+
+
+  /* Add Activities */
+
+  #titulo{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 2em;
+    margin-left: 18%;
+  }
+  #contenedor{
+    display: flex;
+    margin-left: 18%;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .cardsActivities{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(129, 149, 148);
+    width: 15em;
+    height: 15em;
+    margin-right: 1em;
+    border-radius: 15px;
+    position: relative;
+    img{
+      border-radius: 20px;
+    }
+    margin-bottom: 1em;
+    
+  }
+  .cardTitle{
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .cardUrl{
+    
+    width: 8em;
+    
+  }
+  .cardDescription{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 0.7em;
+  }
+
+  .cardEliminar{
+    width: 1.5em;
+    position: absolute;
+    bottom: 0.3em;
+  }
+
+  .cardEliminar:hover{
+    transition: 5ms;
+    transform: scale(1.1);
+  }
+
+  /* Add Activities */
+  
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: rgb(129, 149, 148);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+    align-content: center;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width : 500px) {
+    body{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .header{
+       display: flex;
+       justify-content: center;
+       a{
+        margin-right: 0;
+       }
+    }
+    .lista{
+        display: flex;
+        flex-direction: column;
+    }
+    #about{
+        margin-left: 5%;
+        p{
+            width: 100%;
+        }
+    }
+    #skills{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+    }
+    .cards{
+        margin-left: 0;
+    }
+    .tarjeta{
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    #activities{
+        margin-left: 5%;
+    }
+    .card{
+        margin-left: 10%;
+    }
+    .contenedor{
+      display: flex;
+      flex-direction: column;
+      margin-left: 0%;
+    }
+  }
+ 
+  
+ 
