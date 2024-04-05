@@ -166,27 +166,102 @@ body{
     border-radius: 5px;
   }
   
-  .boton-enviar {
-    font-family: "Space Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+  
+  
+  /* boton Send APP */
+  #animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: ;
+    border-radius: 100px;
+    font-weight: 600;
+    color: #1f387e;
+    box-shadow: 0 0 0 2px #ffffff;
     cursor: pointer;
-    transition: background-color 0.3s;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
   }
   
-  .boton-enviar:hover {
-    background-color: #45a049;
+  #animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: #1f387e;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
   }
   
+  #animated-button .arr-1 {
+    right: 16px;
+  }
+  
+  #animated-button .arr-2 {
+    left: -25%;
+  }
+  
+  #animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #c5e5e4;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  #animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  #animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #212121;
+    border-radius: 12px;
+  }
+  
+  #animated-button:hover .arr-1 {
+    right: -25%;
+  }
+  
+  #animated-button:hover .arr-2 {
+    left: 16px;
+  }
+  
+  #animated-button:hover .text {
+    transform: translateX(12px);
+  }
+  
+  #animated-button:hover svg {
+    fill: #1f387e;
+  }
+  
+  #animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px greenyellow;
+  }
+  
+  #animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+  /*  boton SEND APP*/
 
+ 
   /*  Footer */
-
   
+  /* Footer */
 
 
 
@@ -233,6 +308,16 @@ body{
     justify-content: start;
   }
   .cardsActivities{
+    /* background-color: rgb(15 23 42); */
+      color: white;
+      width: 190px;
+      height: 254px;
+      border-radius: 30px;
+      background-color: rgb(15 23 42);
+      box-shadow: 15px 15px 30px rgb(47, 68, 117),
+                  -15px -15px 30px rgb(47, 68, 117);
+     
+     
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: normal;
@@ -240,9 +325,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(129, 149, 148);
-    width: 15em;
-    height: 15em;
     margin-right: 1em;
     border-radius: 15px;
     position: relative;
@@ -269,7 +351,7 @@ body{
   }
 
   .cardEliminar{
-    width: 1.5em;
+    width: 1em;
     position: absolute;
     bottom: 0.3em;
   }
@@ -281,68 +363,84 @@ body{
 
   /* Add Activities */
   
-  .socialContainer {
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    background-color: rgb(129, 149, 148);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    transition-duration: .3s;
-    align-content: center;
-  }
-  /* instagram*/
-  .containerOne:hover {
-    background-color: #d62976;
-    transition-duration: .3s;
-  }
-  /* twitter*/
-  .containerTwo:hover {
-    background-color: #00acee;
-    transition-duration: .3s;
-  }
-  /* linkdin*/
-  .containerThree:hover {
-    background-color: #0072b1;
-    transition-duration: .3s;
-  }
-  /* Whatsapp*/
-  .containerFour:hover {
-    background-color: #128C7E;
-    transition-duration: .3s;
-  }
-  
-  .socialContainer:active {
-    transform: scale(0.9);
-    transition-duration: .3s;
-  }
-  
-  .socialSvg {
-    width: 17px;
-  }
-  
-  .socialSvg path {
-    fill: rgb(255, 255, 255);
-  }
-  
-  .socialContainer:hover .socialSvg {
-    animation: slide-in-top 0.3s both;
-  }
-  
-  @keyframes slide-in-top {
-    0% {
-      transform: translateY(-50px);
-      opacity: 0;
-    }
-  
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+/* Footer */
+.social-card {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 25px;
+  border-radius: 14px;
+}
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
 
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+  z-index: 2;
+}
+
+.BG {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #181818;
+  z-index: 1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+  font-size: 0px;
+}
+.github .BG {
+  background: #181818;
+}
+.linkdin .BG {
+  background: #0077b5;
+}
+.whatsapp .BG {
+  background: #075e54;
+}
+.discord .BG {
+  background: #7289da;
+}
+.Btn:hover .BG {
+  transform: scale(1.5);
+  /* transform-origin: bottom; */
+  font-size: 20px;
+  color: white;
+}
+
+.Btn:hover .svgContainer {
+  border: 1px solid rgba(216, 216, 216, 0.466);
+  background-color: rgba(209, 209, 209, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+/* Footer */
   @media screen and (max-width : 500px) {
     body{
         display: flex;

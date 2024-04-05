@@ -111,7 +111,6 @@ const Handler = () => {
 
     const form = document.getElementById('formulario');
 
-    
     const InputTitle = document.getElementById('title').value;
 
     const InputUrl = document.getElementById('url').value;
@@ -140,7 +139,7 @@ const Handler = () => {
     }
 }
 
-const button = document.getElementById('button');
+const button = document.getElementById('animated-button');
 
 button.addEventListener('click' , Handler)
 
